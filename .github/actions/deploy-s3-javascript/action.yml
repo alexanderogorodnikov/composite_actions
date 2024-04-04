@@ -11,6 +11,10 @@ inputs:
   dist-folder:
     description: 'The folder to deploy'
     required: true
+outputs:
+  website-url:
+    description: 'The URL of the deployed site'
+    #value: 'https://${{ inputs.bucket }}.s3.${{ inputs.bucket-region }}.amazonaws.com'
 
 runs:
   using: 'node16'
